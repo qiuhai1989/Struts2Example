@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-10-22 15:28:34 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.topwqp.entity.Student" table="t_student" >
+        <id name="sno" type="int">
+            <column name="sno" precision="5" scale="0" />
+            <generator class="native" />
+        </id>
+        <property name="sname" type="string">
+            <column name="sname" length="20" />
+        </property>
+        <property name="sdree" type="string">
+            <column name="sdree" length="200" />
+        </property>
+        <property name="age" type="int">
+            <column name="sage" length="7" />
+        </property>
+        <property name="ssex" type="string">
+            <column name="ssex" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
